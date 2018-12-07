@@ -13,7 +13,6 @@ for a in range(0, len(alphabet)):
     input = ORG_INPUT
     input = input.replace(ALPHABET[a], '')
     input = input.replace(alphabet[a], '')
-    print(len(ORG_INPUT))
     changes = 1
     while changes > 0:
         changes = 0
