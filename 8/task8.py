@@ -33,7 +33,8 @@ def nodeValue(list):
     meta = list.pop(0)
     value = 0
     meta_list = []
-    values = {}
+    # When meta is 0 needs to be added
+    values = {0: 0}
 
     if children == 0:
         for i in range(meta):
@@ -46,7 +47,7 @@ def nodeValue(list):
             meta_list.append(list.pop(0))
 
         for i in meta_list:
-            if i <= children and i > 0:
+            if i <= children:
                 value += values[i]
 
     return value
